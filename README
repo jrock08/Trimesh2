@@ -123,24 +123,10 @@ int main(int argc, char *argv[])
 Compiling:
 ----------
 
-The code is written in C++, and is known to compile using a recent version
-of g++ (4.0.1 or later, but avoid 4.1.2).  Compiling under Windows is
-possible using Cygwin or MinGW32.  Other compilers have not been tested -
-let me know of any successes or failures.
+The code is written in C++, and is known to compile under Ubuntu and Mac
+on recent g++ (4.2.1).  I have not attempted to build it on windows.  If
+you have any issues with the build using this package you should try the
+package provided with makefiles at http://gfx.cs.princeton.edu/proj/trimesh2/
 
-After unpacking the code, edit the appropriate "Makedefs.*" file to
-specify the compiler and any necessary options.  If there is no Makedefs
-for your OS, run "uname" to determine what it should be named and create
-one (probably starting with one of the existing files as a template).
-At this point, just running "make" in the top-level directory should make
-the library (placed in lib.`uname`) and utilities (placed in bin.`uname`).
-
-If you have any problems, please double check the following:
- - You are using a recent version of the compiler
- - You are using a recent version of GNU make
- - The correct -I option is included to find all the headers you need,
-   including OpenGL headers
-If you still have problems, let me (smr@princeton.edu) know and I'll do
-my best to help resolve them.
-
-
+If the makefile package works for you, but the CMake one does not, you
+should try me (jjrock@illinois.edu).
