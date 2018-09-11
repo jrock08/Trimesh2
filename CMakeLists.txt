@@ -15,6 +15,6 @@ include_directories(
   ${trimesh_SOURCE_DIR}
   )
 
-add_subdirectory(libs)
+add_subdirectory(lib)
 add_subdirectory(gluit)
 add_subdirectory(util)
